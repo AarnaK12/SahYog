@@ -27,19 +27,7 @@
                         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href=""> </a></li>
                         <li class="nav-item"><a class="nav-link" href=""> </a></li>
-                        {% if session['username'] == None %}
                         <li class="nav-item"><a class="nav-link" href={{url_for('register')}}>Register/Login</a></li>
-                        {% else %}
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            {{session['username']}}
-                          </a>
-                          <!-- Here's the magic. Add the .animate and .slideIn classes to your .dropdown-menu and you're all set! -->
-                          <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href={{url_for('logout')}}>Log Out</a>
-                          </div>
-                        </li>
-                        {% endif %}
                     </ul>
                 </div>
             </div>
