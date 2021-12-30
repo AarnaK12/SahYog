@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <link rel="stylesheet" href="{{url_for( 'static', filename='bootstrap_css/css/styles.css') }}">
+    <link rel="stylesheet" href="styles.css">
     <!-- This snippet uses Font Awesome 5 Free as a dependency. You can download it at fontawesome.io! -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -98,8 +98,8 @@
                     </a>
                     <!-- Here's the magic. Add the .animate and .slideIn classes to your .dropdown-menu and you're all set! -->
                     <div class="dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href={{url_for('login')}}>Sign In</a>
-                      <a class="dropdown-item" href={{url_for('home')}}>Home</a>
+                      <a class="dropdown-item" href="sign_in.html">Sign In</a>
+                      <a class="dropdown-item" href="index.html">Home</a>
                     </div>
                   </li>
                 </ul>
@@ -163,7 +163,7 @@
                     <button class="btn btn-lg btn-primary btn-login fw-bold text-uppercase" type="submit">Register</button>
                   </div>
     
-                  <a class="d-block text-center mt-2 small" href={{url_for('login')}}>Have an account? Sign In</a>
+                  <a class="d-block text-center mt-2 small" href="sign_in.html">Have an account? Sign In</a>
     
                   <!--
                   <hr class="my-4">
